@@ -1,5 +1,6 @@
 #This script must be run with a sudoer
-echo "BE SURE TO HAVE CONFIGURED ALL OF VARIABLES LIKE THE CLIENT PATH OR THE MANGOS PASSWORD !!!" 
+echo "BE SURE TO HAVE CONFIGURED ALL OF VARIABLES LIKE THE CLIENT PATH OR THE MANGOS PASSWORD !!!"
+echo "If u need the client, wget http://dl.wowdl.fr/wow/fr/clients/Client_1.12.1.zip"
 sleep 5
 sudo apt-get install git make cmake libssl-dev libbz2-dev build-essential default-libmysqlclient-dev libace-6.4.5 libace-dev mysql-server -y
 mangospath=$(pwd)
