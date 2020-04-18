@@ -1951,8 +1951,8 @@ WrongPass.MaxCount     = 3
 WrongPass.BanTime      = 300
 WrongPass.BanType      = 0
 ' > $mangospath/server/etc/realmd.conf
-mysql -u mangos -p$mangospassword -e "UPDATE realmlist SET address='"$ip"';"
-mysql -u mangos -p$mangospassword -e "UPDATE realmlist SET localAddress='"$ip"';"
+mysql -u mangos -p$mangospassword -D realmd -e "UPDATE realmlist SET address='"$ip"';"
+mysql -u mangos -p$mangospassword -D realmd -e "UPDATE realmlist SET localAddress='"$ip"';"
 echo "#!/bin/sh
 cd "$mangospath"/server/bin/
 screen -A -m -d -S mangosd ./mangosd
