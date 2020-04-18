@@ -1952,3 +1952,7 @@ WrongPass.BanType      = 0
 ' > $mangospath/server/etc/realmd.conf
 mysql -u mangos -p -e "UPDATE realmlist SET address='"$ip"';"
 mysql -u mangos -p -e "UPDATE realmlist SET localAddress='"$ip"';"
+echo "#!/bin/sh
+cd "$mangospath"/server/bin/
+screen -A -m -d -S mangosd ./mangosd
+screen -A -m -d -S realmd ./realmd" > $mangospath/run.sh
