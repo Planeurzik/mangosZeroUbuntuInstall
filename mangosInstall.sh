@@ -451,7 +451,7 @@ MaxWhoListReturns                 = 49
 
 LogSQL                       = 1
 PidFile                      = ""
-LogLevel                     = 3
+LogLevel                     = 0
 LogTime                      = 0
 LogFile                      = "world-server.log"
 LogTimestamp                 = 0
