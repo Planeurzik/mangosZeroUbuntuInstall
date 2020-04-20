@@ -1957,3 +1957,4 @@ echo "#!/bin/sh
 cd "$mangospath"/server/bin/
 screen -A -m -d -S mangosd ./mangosd
 screen -A -m -d -S realmd ./realmd" > $mangospath/run.sh
+chmod +x $mangospath/run.sh
