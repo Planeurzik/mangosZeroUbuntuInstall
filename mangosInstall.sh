@@ -50,7 +50,7 @@ log-error	= /var/log/mysql/error.log
 bind-address	= 0.0.0.0
 # Disabling symbolic-links is recommended to prevent assorted security risks
 symbolic-links=0" | sudo tee /etc/mysql/mysql.conf.d/mysqld.cnf
-sudo systemctl restart mysql
+sudo systemctl restart mysql.service
 git clone https://github.com/mangoszero/server.git --recursive --depth 1
 git clone https://github.com/mangoszero/database.git --recursive --depth 1
 mkdir $mangospath/server/build
