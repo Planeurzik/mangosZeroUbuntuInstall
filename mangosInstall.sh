@@ -58,7 +58,8 @@ cd server && cd build && cmake .. -DCMAKE_INSTALL_PREFIX=$mangospath/server && m
 cd $mangospath/database && chmod -R +x *.sh && ./InstallDatabases.sh
 cd $mangospath/server/bin && chmod -R +x *.sh && cp -av tools/* ExtractResources.sh MoveMapGen.sh mmap_excluded.txt offmesh.txt $clientpath
 cd $clientpath && ./ExtractResources.sh
-mkdir $mangospath/server/etc/dbc
+sudo mkdir $mangospath/server/etc/
+sudo mkdir $mangospath/server/etc/dbc
 sudo mv $clientpath/dbc/ $mangospath/server/etc/dbc/
 sudo mv $clientpath/maps/ $mangospath/server/etc/
 sudo mv $clientpath/vmaps/ $mangospath/server/etc/
